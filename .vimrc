@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
-" Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
@@ -11,3 +12,5 @@ set expandtab
 set smarttab
 
 syntax enable
+
+:nnoremap <C-b> :NERDTreeToggle<CR>
